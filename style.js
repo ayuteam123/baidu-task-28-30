@@ -70,6 +70,7 @@ function addInfo(){
     		var text=this.innerText;
     		input.value=text;
     		this.parentNode.style.display="none";
+    		input.focus();
     	});
     	if(i==0){
     		templi.classList.add('active-li');
@@ -98,6 +99,7 @@ function choose(){
 			if (sugLi[i].classList.contains('active-li')){
 				input.value=sugLi[i].innerText;
 				sugDom.style.display="none";
+				input.focus();
 			}
 		}
 	}else{
